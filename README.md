@@ -44,7 +44,7 @@ El sistema está compuesto por los siguientes módulos:
 ✔ **Base de Datos (MySQL)**  
 ✔ **Documentación API (Swagger UI)**  
 
-Flujo de operación:
+### Flujo de operación
 
 Tarjeta RFID → Arduino → Backend → Base de Datos
 
@@ -70,7 +70,7 @@ El sistema maneja entidades como:
 - Tarjeta RFID
 - Registro de Acceso
 
-Ejemplo de información procesada:
+### Ejemplo de información procesada
 
 ```json
 {
@@ -78,11 +78,8 @@ Ejemplo de información procesada:
   "evento": "ENTRADA",
   "fecha": "2026-02-16T19:00:00"
 }
-
 🚀 Ejecución del Proyecto
-
 ✅ 1️⃣ Requisitos Previos
-
 Instalar:
 
 Java 17+
@@ -97,49 +94,35 @@ Git
 
 ✅ 2️⃣ Configuración Base de Datos
 CREATE DATABASE sistema_registro_carros;
-
 ✅ 3️⃣ Configuración Backend
-
 Editar:
 
 src/main/resources/application.properties
-
 spring.datasource.url=jdbc:mysql://localhost:3306/sistema_registro_carros
 spring.datasource.username=root
 spring.datasource.password=TU_PASSWORD
 spring.jpa.hibernate.ddl-auto=update
-
 ✅ 4️⃣ Ejecutar Backend
-
 Desde terminal:
 
 mvn spring-boot:run
-
-
 O desde IDE:
 
 Run → Spring Boot App
-
 📖 Documentación API
-
 Swagger UI disponible en:
 
 http://localhost:8082/doc/swagger-ui.html
-
 🔌 Integración IoT
-
 El Arduino:
 
 ✔ Lee tarjetas RFID
 ✔ Envía datos al backend
 ✔ Permite automatizar acciones físicas (barrera, LEDs, etc.)
 
-Comunicación típica:
-
+Comunicación típica
 Arduino → API REST → Registro en BD
-
 📈 Posibles Mejoras Futuras
-
 ✅ Panel administrativo web
 ✅ Autenticación y roles
 ✅ Historial avanzado de accesos
@@ -147,6 +130,5 @@ Arduino → API REST → Registro en BD
 ✅ Integración con sensores adicionales
 
 👨‍💻 Autor
-
 Josue Ochoa
 Estudiante de Ingeniería de Sistemas
