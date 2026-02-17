@@ -82,6 +82,7 @@ El sistema maneja entidades como:
 ```
 
 🚀 Ejecución del Proyecto
+
 ✅ 1️⃣ Requisitos Previos
 Instalar:
 
