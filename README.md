@@ -141,3 +141,7 @@ Arduino → API REST → Registro en BD
 👨‍💻 Autor
 Josue Ochoa
 Estudiante de Ingeniería de Sistemas
+
+---
+
+✨ *Gracias por visitar el proyecto* ✨
