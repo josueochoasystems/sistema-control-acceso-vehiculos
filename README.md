@@ -78,6 +78,9 @@ El sistema maneja entidades como:
   "evento": "ENTRADA",
   "fecha": "2026-02-16T19:00:00"
 }
+
+```
+
 🚀 Ejecución del Proyecto
 ✅ 1️⃣ Requisitos Previos
 Instalar:
@@ -92,16 +95,21 @@ Arduino IDE
 
 Git
 
+
 ✅ 2️⃣ Configuración Base de Datos
-CREATE DATABASE sistema_registro_carros;
+CREATE DATABASE registro_carros;
+
+
 ✅ 3️⃣ Configuración Backend
 Editar:
 
 src/main/resources/application.properties
-spring.datasource.url=jdbc:mysql://localhost:3306/sistema_registro_carros
+spring.datasource.url=jdbc:mysql://localhost:3306/registro_carros
 spring.datasource.username=root
 spring.datasource.password=TU_PASSWORD
 spring.jpa.hibernate.ddl-auto=update
+
+
 ✅ 4️⃣ Ejecutar Backend
 Desde terminal:
 
