@@ -102,12 +102,17 @@ CREATE DATABASE registro_carros;
 
 
 ✅ 3️⃣ Configuración Backend
+
 Editar:
 
 src/main/resources/application.properties
+
 spring.datasource.url=jdbc:mysql://localhost:3306/registro_carros
+
 spring.datasource.username=root
+
 spring.datasource.password=TU_PASSWORD
+
 spring.jpa.hibernate.ddl-auto=update
 
 
@@ -115,31 +120,51 @@ spring.jpa.hibernate.ddl-auto=update
 Desde terminal:
 
 mvn spring-boot:run
+
 O desde IDE:
 
 Run → Spring Boot App
+
 📖 Documentación API
+
 Swagger UI disponible en:
 
 http://localhost:8082/doc/swagger-ui.html
+
 🔌 Integración IoT
+
+
 El Arduino:
 
 ✔ Lee tarjetas RFID
+
 ✔ Envía datos al backend
+
 ✔ Permite automatizar acciones físicas (barrera, LEDs, etc.)
 
 Comunicación típica
+
 Arduino → API REST → Registro en BD
+
+
 📈 Posibles Mejoras Futuras
+
 ✅ Panel administrativo web
+
 ✅ Autenticación y roles
+
 ✅ Historial avanzado de accesos
+
 ✅ Reportes y estadísticas
+
 ✅ Integración con sensores adicionales
 
-👨‍💻 Autor
-Josue Ochoa
+
+---
+
+## 👨‍💻 Autor
+
+**Josue Ochoa**  
 Estudiante de Ingeniería de Sistemas
 
 ---
